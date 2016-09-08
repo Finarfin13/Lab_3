@@ -10,3 +10,87 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+/*
+ * * Copyright (C) 2016 Finarfin
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+package lab3_finarfin;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Finarfin
+ */
+public class Lab3_Finarfin {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("Bienvenido al programa de Finarfin");
+        System.out.println("1. Contador");
+        Scanner as = new Scanner(System.in);
+        System.out.print("Indique un numero");
+
+        int a = as.nextInt();
+        int b = a;
+        int c = a;
+        long d = a;
+        int e = a;
+        int f = a;
+
+        while (a <= 20) {
+            System.out.println(a);
+            a = a + 1;
+        }
+
+        System.out.println("2. De tres en tres");
+        while (b <= 100) {
+            System.out.println(b);
+            b = b + 3;
+        }
+
+        System.out.println("3. Multiplicado por tres");
+        while (c <= 100) {
+            System.out.println(c);
+            c = c * 3;
+        }
+        
+        System.out.println("4. Piramidal");
+        if (d < 10){
+            while (d < 1000000000){
+                System.out.println(d);
+                d = (d * 10) + e;
+            }
+        }
+        if (d >= 10 ) {
+            while ( d < 1000000000){
+                System.out.println(d);
+                d = (d * 100) + e;
+                
+            }
+        }
+        System.out.println("5. Divisor");
+        while (f <= 100){
+            System.out.println("-1/" + (f));
+            f = (2 * f) - 1;
+        }
+          
+
+    }
+
+}
